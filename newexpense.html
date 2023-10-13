@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ExpenseCalc</title>
+  <link rel="icon" href="/svgs/favicon.svg" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="hero">
+      <div class="page-title headline">
+        <p>New expense</p>
+      </div>
+      <button id="cancel-btn" class="secondary-btn">Cancel</button>
+    </div>
+    <div class="divider"></div>
+    <div class="expenses-container">
+      <div id="expenses-header">
+        <span class="grey text-body-small ">Enter expense details.</span>
+      </div>
+      <form id="expense-form">
+      <div class="form-group">
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+      </div>
+      <div class="form-group">
+        <div class="category-options">
+          
+          <label class="radio-container" for="food">
+            <div class="radio-item-details">
+              <img src="/svgs/Food.svg" alt="food" class="category-img">
+            Food
+            </div>
+            <input type="radio" id="food" name="category" value="Food" required>
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="radio-container"  for="airtime">
+            <div class="radio-item-details">
+              <img src="/svgs/Airtime/Data.svg" alt="airtime" class="category-img">
+            Airtime/Data
+            </div>
+            <input type="radio" id="airtime" name="category" value="Airtime/Data" required>
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="radio-container"  for="cash-withdrawal">
+            <div class="radio-item-details">
+              <img src="/svgs/Cash Withdrawal.svg" alt="cash" class="category-img">
+            Cash Withdrawal
+            </div>
+            <input type="radio" id="cash-withdrawal" name="category" value="Cash Withdrawal" required>
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="radio-container"  for="other">
+            <div class="radio-item-details">
+              <img src="/svgs/Other.svg" alt="other" class="category-img">
+            Other
+            </div>
+            <input type="radio" id="other" name="category" value="Other" required>
+            <span class="checkmark"></span>
+          </label>
+          
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="date" id="date" name="date" placeholder="Choose date">
+      </div>
+      <button class="primary-btn " type="submit">Submit</button>
+    </form>
+
+      </div>
+    </div>
+  </div>
+
+  <p id="footer">Made by <a href="https://www.tofunmiadewuyi.com" target="_blank" rel="noopener noreferrer" id="footer-link">7ofunm1©</a>, 2023</p>
+  <script src="newexpense.js"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
