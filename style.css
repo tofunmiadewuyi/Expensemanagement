@@ -6,6 +6,10 @@ html {
   color: #F7FAF3;
 }
 
+body {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
